@@ -61,7 +61,7 @@ var metadata = {
       {#each $nfts as nft} 
       <SwiperSlide>      
         <Card 
-        nfttitle="{metadata['name']} #{nft['nftId']+1}"
+        nfttitle="{metadata['name']} #{nft['nftId']}"
         desc="{metadata['description']}"
         owner="Owner I"
         nftimage='/pepes/bsc/{nft['image']}'

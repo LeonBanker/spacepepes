@@ -15,7 +15,7 @@
     <div class="card">
         <div class="row">
             <div class="nft-image">
-                {#if final = true}                
+                {#if final == true}                
                 <div class="sketchfab-embed-wrapper"> 
                     <iframe style="overflow: hidden;border-radius: 1rem;" height="300px" title="SpacePepes - Roger" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/81d72f1429f344bda40fbbfa9cb07d36/embed?autostart=1&ui_theme=dark"> </iframe></div>
                 {:else}
