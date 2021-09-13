@@ -52,7 +52,7 @@
                 {#if !$address}
                   <button on:click={connectWallet}><h2>CONNECT WALLET</h2></button>
                 {:else}
-                  <button on:click={mint}><h2>MINT</h2></button>
+                  <button class="glow" on:click={mint}><h2>MINT</h2></button>
                 {/if}
             </div>
             {/if}
@@ -199,6 +199,13 @@ animation();
         overflow:hidden;border-radius: 1rem;        
         box-shadow: 0px 15px 60px -5px rgba(20, 24, 223, 0.32);
         animation:grow 5s linear infinite;
+    }
+    .glow{animation:glow 2s ease infinite;
+    }
+    @keyframes glow{
+      0%{box-shadow:inset 0px 0px 0px white;}
+      50%{box-shadow:inset 0px 0px 10px white;}
+      100%{box-shadow:inset 0px 0px 0px white;}
     }
     .mint-box{
         display:flex;flex-flow:column;
