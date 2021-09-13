@@ -113,7 +113,7 @@ export async function mintPepe() {
     }
     etherLoading.set(false);
     alreadyMinted.set(true);
-    supply = await contract.totalSupply();
+    supply = await contract.currentTokenId();
     totalSupply.set(supply);
 }
 
@@ -146,12 +146,13 @@ function onDisconnect() {
     console.log("onDisconnect");
 }
 
-export async function subscribeToTransferEvent(provider,contract) {
+export async function subscribeToTransferEvent(provider) {
     const filter = {
       topics: [ethers.utils.id('Transfer(address,address,uint256)')]
     };
     provider.on(filter, async () => {
-        var total = await contract.totalSupply();
+        var nftContract = get(contract);
+        var total = await nftContract.currentTokenId();
         totalSupply.set(total)
     });
   }

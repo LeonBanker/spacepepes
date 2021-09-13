@@ -49,7 +49,7 @@ var metadata = {
             />
         </SwiperSlide>
       {:else}     
-      {#each $balances as nft} 
+      {#each $balances.sort(function(a, b){return a['nftId'] - b['nftId']}) as nft} 
       <SwiperSlide>      
         <Card 
         nfttitle="{metadata['name']} #{nft['nftId']}"
