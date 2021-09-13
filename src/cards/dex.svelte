@@ -1,7 +1,7 @@
 <script>
     //Help import data from opensea <3 
     export let nftlink = 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/42177050677546159779710000316165471247211713436920374376455667151256854462465';
-    export let nftimage = 'https://lh3.googleusercontent.com/gzNYAoekV_UlhEn47l7UIaQ5Bs3Rsgz9QL5ITQ8BN53SP5NSlU2CjfHQXGzGhVw1JJ2dy7qUHVqcbyQs21jEF5YnO8_sAqAS_mRH=w600';
+    export let nftimage = '/imgs/mintpepe.png';
     export let nfttitle = 'Space Pepe #1';
     export let desc = '11 SpacePepes from the planet Serpo are on a Space Expedition from the star system Zeta Reticuli. ';
     export let protocol = 'ERC-1155';
