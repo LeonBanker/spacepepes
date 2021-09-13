@@ -75,7 +75,6 @@ var metadata = {
   top: 0px;
   width: 100vw;
   left: 0px;" id="canvas"></canvas>
-
   <script>
     "use strict";
 
@@ -193,6 +192,17 @@ animation();
 
     display: flex;
 }
+.scrollimg{
+  mix-blend-mode: screen;
+         filter: brightness(0.5);
+         opacity: 0.5;
+         position: absolute;
+         border-radius:50%;
+         right: 0px;
+         top: calc(50% - 15rem);
+         height: 30rem;
+}
+
 @keyframes grow{
     0%{transform:scale(1);}
     50%{transform:scale(0.9);}
