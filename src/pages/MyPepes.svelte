@@ -23,13 +23,16 @@ function connectWallet(event) {
 var metadata = {
      "name": "SpacePepesFTM",
      "description": "100 SpacePepe's from an unknown F-type main sequence star have received an arrival beacon through Lieutenant Pepe that extraterrestrial contact with Earth has been established. They want to use the energy of the earthlings living there and establish a permanent settlement. Though they look terrifying, these SpacePepes are smart creatures that love the fine arts like the Opera.",
-     "image": 'https://spacepepes.com/pepes/',
-     "external_url": 'https://spacepepes.com/pepes/'
+     "image": 'https://spacepepes.com/pepes/bsc/',
+     "external_url": 'https://spacepepes.com/pepes/bsc/'
 };
 </script>
 
 <main>
   <div class="wrapper">
+    {#if !$address}
+    <button on:click={connectWallet}><h2>CONNECT WALLET</h2></button>
+    {:else}
         <Swiper style="height:max-content!important;margin:auto!important;"
         spaceBetween={50}
         slidesPerView={1}
@@ -62,6 +65,7 @@ var metadata = {
       
       {/if}
     </Swiper>
+    {/if}
     <footer transition:slide >
 
     </footer>

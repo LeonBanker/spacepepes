@@ -45,7 +45,7 @@
               {/if}
             </div>
             <div style="margin-bottom:2rem;">
-              Price: 5 BNB
+              Price: 2 BNB
             </div>
             {#if $etherLoading === false}
             <div class="mint-button-wrapper">

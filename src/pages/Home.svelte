@@ -28,10 +28,10 @@ function connectWallet(event) {
     connectEthProvider(false);
 }   
 var metadata = {
-     "name": "SpacePepesFTM",
+     "name": "SpacePepesBSC",
      "description": "100 SpacePepe's from an unknown F-type main sequence star have received an arrival beacon through Lieutenant Pepe that extraterrestrial contact with Earth has been established. They want to use the energy of the earthlings living there and establish a permanent settlement. Though they look terrifying, these SpacePepes are smart creatures that love the fine arts like the Opera.",
-     "image": 'https://spacepepes.com/pepes/',
-     "external_url": 'https://spacepepes.com/pepes/'
+     "image": 'https://spacepepes.com/pepes/bsc/',
+     "external_url": 'https://spacepepes.com/pepes/bsc/'
 };
 </script>
 
@@ -64,7 +64,7 @@ var metadata = {
         nfttitle="{metadata['name']} #{nft['nftId']+1}"
         desc="{metadata['description']}"
         owner="Owner I"
-        nftimage='/pepes/{nft['image']}'
+        nftimage='/pepes/bsc/{nft['image']}'
         protocol='ERC-721'
           />
           <img class="scrollimg" src="/imgs/Bar-Arrow.gif" alt="" />

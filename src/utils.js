@@ -16,7 +16,7 @@ import {
 import { abi } from './abis/SpacePepe.json';
 import { get } from 'svelte/store'
 
-const NFT_CONTRACT_ADDRESS = '0x0253D4Cf2049a5E0D9f99706074DCe5E7F296e52'
+const NFT_CONTRACT_ADDRESS = '0x4aade0853572D8e380888bdDfC2D88201a64febd'
 export async function initProvider(app, reconnect = false) {
     var signer, addr, p;
     try {
@@ -140,7 +140,7 @@ function onDisconnect() {
 
 export async function subscribeToTransferEvent(provider,contract) {
     const filter = {
-      topics: [ethers.utils.id('Transfer(address,address,uint256')]
+      topics: [ethers.utils.id('Transfer(address,address,uint256)')]
     };
     provider.on(filter, async () => {
         var total = await contract.totalSupply();

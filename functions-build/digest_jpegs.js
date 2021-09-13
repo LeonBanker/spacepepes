@@ -31,8 +31,8 @@ function returnSuccess(data, statusCode = 200) {
 
 //53 special move to 1
 exports.handler = async function(event) {
-    var base_dir = './public/pepes/';
-    var seed_dir = base_dir + 'SpacepepesFTM/'
+    var base_dir = './public/pepes/bsc/';
+    var seed_dir = base_dir + 'SpacepepesBSC/'
     var id = 0;
     fs.readdir(seed_dir, async (err, items) => {
         for (const dirent of items) {
@@ -44,7 +44,7 @@ exports.handler = async function(event) {
                 })
                 try {
                   await client.query(
-                    q.Create(q.Collection('pepes'), {
+                    q.Create(q.Collection('pepes_bsc'), {
                       data: {
                         nftId: id,
                         image: file_name
