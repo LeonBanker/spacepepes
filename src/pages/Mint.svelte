@@ -56,7 +56,7 @@
                 {/if}
             </div>
             {/if}
-            <div>
+            <div style="margin: 2rem auto;">
                 {addressDisplay}
                 {#if $address}
                   <Link style="margin: 2rem auto;" to='/mypepes'><h2>MY SPACEPEPES <img width="24px" style="filter:invert(1);" src="/imgs/play.svg" alt=""></h2></Link>
