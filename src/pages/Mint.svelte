@@ -32,7 +32,7 @@
         <div class="mint-box">
             <div class="mint-title-box">
                 <h1>MINT A SPACEPEPE</h1>
-                <p>Only one per account.</p>
+                <p>As many as you can mint!</p>
                 {#if $totalSupply > 0}
                 <p>{$totalSupply}/{$maxSupply} Minted</p>
                 {/if}
