@@ -35,6 +35,7 @@ exports.handler = async function(event) {
         }
         res = await client.query(ref.data.map(n => q.Get(n)))
         var pepes = res.map(n => n.data);
+        if(pepes[0]['nftId'] == 2) currentNft-=1;
         return returnSuccess(pepes.slice(0,currentNft));
     }
     catch(error) {
