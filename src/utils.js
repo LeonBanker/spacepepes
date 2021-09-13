@@ -16,7 +16,7 @@ import {
 import { abi } from './abis/SpacePepe.json';
 import { get } from 'svelte/store'
 
-const NFT_CONTRACT_ADDRESS = '0x4aade0853572D8e380888bdDfC2D88201a64febd'
+const NFT_CONTRACT_ADDRESS = '0x94fC59bf3940c254A7Dd34ee96496D389CaAED00'
 export async function initProvider(app, reconnect = false) {
     var signer, addr, p;
     try {
@@ -89,7 +89,7 @@ export async function mintPepe() {
     const nftContract = get(contract)
     const signer = p.getSigner();
     try {
-        const resp = await nftContract.mint({ value: ethers.utils.parseEther('500') });
+        const resp = await nftContract.mint({ value: ethers.utils.parseEther('2') });
         etherLoading.set(true);
 
         await resp.wait().then(
