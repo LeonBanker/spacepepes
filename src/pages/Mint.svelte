@@ -34,7 +34,7 @@
                 <h1>MINT A SPACEPEPE</h1>
                 <p>Only one per account.</p>
                 {#if $totalSupply > 0}
-                <p>{$totalSupply}/99 Minted</p>
+                <p>{$totalSupply}/100 Minted</p>
                 {/if}
             </div>
             <div class="mint-image-wrapper">
@@ -45,7 +45,7 @@
               {/if}
             </div>
             <div style="margin-bottom:2rem;">
-              Price: 500 FTM
+              Price: 5 BNB
             </div>
             {#if $etherLoading === false}
             <div class="mint-button-wrapper">
