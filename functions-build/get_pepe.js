@@ -37,7 +37,7 @@ exports.handler = async function(event) {
     if(!nftId) 
         return returnError('Invalid ID');
 
-    provider = await ethers.getDefaultProvider('https://data-seed-prebsc-1-s1.binance.org:8545/')
+    provider = await ethers.getDefaultProvider('https://bsc-dataseed1.ninicoin.io/')
     const nftContract = new ethers.Contract(process.env.NFT_CONTRACT_ADDRESS, abi, provider);
     var currentNft = await nftContract.totalSupply();
     currentNft = parseInt(currentNft.toString())
