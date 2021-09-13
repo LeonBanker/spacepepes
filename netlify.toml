@@ -5,7 +5,7 @@
   VUE_APP_INFURA_ID = "6dccc3daffad46d280f872d4a73721e1"
   FAUNADB_SERVER_SECRET = "fnAESiNtj_ACQAVh6pM8vECd16tCQka6SQqH6Fwu"
   ALCHEMY_SECRET = "ihOBDG_dRc85G3mbQvLDpbWm-fXn8UCq"
-  NFT_CONTRACT_ADDRESS = '0x0253D4Cf2049a5E0D9f99706074DCe5E7F296e52'
+  NFT_CONTRACT_ADDRESS = '0x94fC59bf3940c254A7Dd34ee96496D389CaAED00'
 [functions]
   directory = "functions-build"
   node_bundler = "esbuild"
@@ -14,7 +14,7 @@ package = "@netlify/plugin-functions-install-core"
 
 [[redirects]]
   from = "/json/pepes/*"
-  to = "/json/pepes/"
+  to = "/json/pepes/bsc/"
   status = 200
 
 [[redirects]]

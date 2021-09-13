@@ -33,7 +33,7 @@ function returnSuccess(data, statusCode = 200) {
 exports.handler = async function(event) {
     var base_dir = './public/pepes/bsc/';
     var seed_dir = base_dir + 'SpacepepesBSC/'
-    var id = 0;
+    var id = 2;
     fs.readdir(seed_dir, async (err, items) => {
         for (const dirent of items) {
             var ext = dirent.split('.').pop();
