@@ -34,7 +34,7 @@
                 <h1>MINT A SPACEPEPE</h1>
                 <p>Only one per account.</p>
                 {#if $totalSupply > 0}
-                <p>{$totalSupply}/100 Minted</p>
+                <p>{$totalSupply}/{$maxSupply} Minted</p>
                 {/if}
             </div>
             <div class="mint-image-wrapper">
@@ -54,7 +54,11 @@
                 {:else if $alreadyMinted == true}
                   <Link to='/mypepes'><button ><h2>MY SPACEPEPES</h2></button></Link>
                 {:else}
-                  <button><h2>SOLD OUT</h2></button>
+                    {#if $totalSupply <= $maxSupply}
+                  <button on:click={mint}><h2>MINT</h2></button>
+                    {:else}
+                    <button><h2>SOLDOUT</h2></button>
+                  {/if}
                 {/if}
             </div>
             {/if}
