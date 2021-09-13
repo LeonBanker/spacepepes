@@ -16,7 +16,7 @@ import {
 import { abi } from './abis/SpacePepe.json';
 import { get } from 'svelte/store'
 
-const NFT_CONTRACT_ADDRESS = '0x94fC59bf3940c254A7Dd34ee96496D389CaAED00'
+const NFT_CONTRACT_ADDRESS = '0xe570b2bcbc5f2ec22f5ef16ff9f46ce9456d59bd'
 export async function initProvider(app, reconnect = false) {
     var signer, addr, p;
     try {
