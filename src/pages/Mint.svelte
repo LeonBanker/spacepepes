@@ -59,7 +59,7 @@
             <div>
                 {addressDisplay}
                 {#if $address}
-                  <Link to='/mypepes'><h2>MY SPACEPEPES</h2></Link>
+                  <Link style="margin: 2rem auto;" to='/mypepes'><h2>MY SPACEPEPES <img width="24px" style="filter:invert(1);" src="/imgs/play.svg" alt=""></h2></Link>
                 {/if}
             </div>
         </div>    
