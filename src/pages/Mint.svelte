@@ -51,8 +51,6 @@
             <div class="mint-button-wrapper">
                 {#if !$address}
                   <button on:click={connectWallet}><h2>CONNECT WALLET</h2></button>
-                {:else if $alreadyMinted == true}
-                  <Link to='/mypepes'><button ><h2>MY SPACEPEPES</h2></button></Link>
                 {:else}
                   <button on:click={mint}><h2>MINT</h2></button>
 
