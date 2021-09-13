@@ -53,12 +53,14 @@
                   <button on:click={connectWallet}><h2>CONNECT WALLET</h2></button>
                 {:else}
                   <button on:click={mint}><h2>MINT</h2></button>
-
                 {/if}
             </div>
             {/if}
             <div>
                 {addressDisplay}
+                {#if $address}
+                  <Link to='/mypepes'><h2>MY SPACEPEPES</h2></Link>
+                {/if}
             </div>
         </div>    
     </div>

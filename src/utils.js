@@ -59,7 +59,7 @@ export async function initProvider(app, reconnect = false) {
     total = parseInt(total.toString())
     var iterate = [...Array(total).keys()]
     var bals = [];
-    
+    console.log(iterate)
     var each = iterate.forEach( async i => {
         var owner
         try {
@@ -68,8 +68,16 @@ export async function initProvider(app, reconnect = false) {
         catch(err) {
             console.log(err)
         }
+        console.log('owned', i)
         if(owner == addr) {
-            bals.push(resp[i])
+            
+            if(resp[i]['nftId'] != i+1)
+            { if(i==0)
+                return
+              bals.push(resp[i-1])
+            }
+            else
+                bals.push(resp[i])
             balances.set(bals);
         }
     })
