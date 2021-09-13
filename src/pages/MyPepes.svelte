@@ -55,7 +55,7 @@ var metadata = {
         nfttitle="{metadata['name']} #{nft['nftId']}"
         desc="{metadata['description']}"
         owner="Owner I"
-        nftimage='/pepes/{nft['image']}'
+        nftimage='/pepes/bsc/{nft['image']}'
         protocol='ERC-721'
           />
           <img class="scrollimg" src="/imgs/Bar-Arrow.gif" alt="" />
