@@ -147,10 +147,9 @@ function onDisconnect() {
 }
 
 export async function subscribeToTransferEvent(provider) {
-    const filter = {
-      topics: [ethers.utils.id('Transfer(address,address,uint256)')]
-    };
-    provider.on(filter, async () => {
+    var nftContract = get(contract);
+
+    nftContract.on("Transfer", async (to, amount, from) => {
         var nftContract = get(contract);
         var total = await nftContract.currentTokenId();
         totalSupply.set(total)
