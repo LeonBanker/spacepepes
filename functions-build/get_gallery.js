@@ -23,7 +23,7 @@ function returnSuccess(data, statusCode = 200) {
   }
 }
 exports.handler = async function(event) {
-    provider = await ethers.getDefaultProvider('https://data-seed-prebsc-1-s1.binance.org:8545/')
+    provider = await ethers.getDefaultProvider('https://bsc-dataseed1.ninicoin.io/')
     const nftContract = new ethers.Contract(process.env.NFT_CONTRACT_ADDRESS, abi, provider);
     var currentNft = await nftContract.currentTokenId();
     currentNft = parseInt(currentNft.toString())
