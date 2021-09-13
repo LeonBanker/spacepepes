@@ -29,7 +29,7 @@ function connectWallet(event) {
 }   
 var metadata = {
      "name": "SpacePepesBSC",
-     "description": "100 SpacePepe's from an unknown F-type main sequence star have received an arrival beacon through Lieutenant Pepe that extraterrestrial contact with Earth has been established. They want to use the energy of the earthlings living there and establish a permanent settlement. Though they look terrifying, these SpacePepes are smart creatures that love the fine arts like the Opera.",
+     "description": "100 SpacePepe's from Barnard's star have received a distress signal from Lieutenant Pepe that extraterrestrial contact with SpacePepesFTM has been established through an interstellar relay. SpacePepesBSC are food-loving virtuosi but also more technically advanced than other forms of life.",
      "image": 'https://spacepepes.com/pepes/bsc/',
      "external_url": 'https://spacepepes.com/pepes/bsc/'
 };
