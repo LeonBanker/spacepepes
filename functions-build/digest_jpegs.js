@@ -54,7 +54,7 @@ exports.handler = async function(event) {
                 } catch (error) {
                   console.log(error)
                 }
-                console.log(file_name + " has been created")
+                console.log(file_name + " has  been created")
                 id += 1;
             }
           }
