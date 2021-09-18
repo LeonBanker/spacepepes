@@ -52,7 +52,7 @@
                 {#if !$address}
                   <button on:click={connectWallet}><h2>CONNECT WALLET</h2></button>
                 {:else}
-                  <button class="glow" on:click={mint}><h2>MINT</h2></button>
+                  <button class="glow" on:click={mint}><h2 class="text" style="margin: 1rem 0rem;font-size: 2rem;letter-spacing: 10px;">MINT</h2></button>
                 {/if}
             </div>
             {/if}
@@ -202,10 +202,18 @@ animation();
     }
     .glow{animation:glow 2s ease infinite;
     }
+    .text{animation:text 1s ease infinite;
+    }
     @keyframes glow{
-      0%{box-shadow:inset 0px 0px 0px white;}
-      50%{box-shadow:inset 0px 0px 10px white;}
-      100%{box-shadow:inset 0px 0px 0px white;}
+      0%{text-shadow:0px 0px 0px rgb(188, 255, 1);box-shadow:0px 5px rgb(188, 255, 1), 0px 0px 0px white;}
+      50%{text-shadow:0px 0px 10px rgb(188, 255, 1);box-shadow:0px 5px rgb(188, 255, 1), 0px 0px 10px white;}
+      100%{text-shadow:0px 0px 0px rgb(188, 255, 1);box-shadow:0px 5px rgb(188, 255, 1), 0px 0px 0px white;}
+    }
+    
+    @keyframes text{
+      0%{text-shadow:0px 0px 0px rgb(188, 255, 1);}
+      50%{text-shadow:0px 0px 10px rgb(188, 255, 1);}
+      100%{text-shadow:0px 0px 0px rgb(188, 255, 1);}
     }
     .mint-box{
         display:flex;flex-flow:column;
@@ -215,10 +223,20 @@ animation();
     button:hover h2 > img{
 filter:invert(0);
     }
+    button:hover > h2{
+    color:rgb(188, 255, 1);
+    }
+    button > h2{
+    color:black;
+    }
+    button:hover{background-color:black;}
     button h2 > img{
 filter:invert(1);
     }
-    button{cursor:pointer;background-color:transparent;border-radius:1rem;border:5px solid white;padding:0.5rem 2rem;}
+    button{background-color:white;
+      cursor:pointer;
+      border-radius:1rem;border:5px solid white;
+      padding:0.5rem 2rem;}
     .mint-button-wrapper{
         display:flex;flex-flow:row;justify-content: center;
     }
