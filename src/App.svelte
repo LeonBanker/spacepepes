@@ -30,15 +30,16 @@
           </div>
         </div>
       </header>
+      <footer style="">
+          <a href="/"><h1 class="pepebottom">SPACEPEPES</h1></a>
+          <p style="margin:auto;margin-top:-1rem;">CURRENT CHAIN: FANTOM</p>
+        <a href="https://spacepepes.com"><h3 style="text-align:center;">SELECT DIFFERENT CHAIN</h3></a>
+      </footer>
     <Router url="{url}">
-        {#if url === '/mint'}
-        <Link style="top:0px;left:opx;position:absolute;z-index:6;" to="/">
-            <img class="mint" style="margin:2.5rem;" height="48px" src="/imgs/home.png" alt=""></Link>
-        {:else}
+    
         <Link style="top:0px;left:opx;position:absolute;z-index:6;" to="/mint">
-            <img class="mint" style="margin:2.5rem;" height="48px" src="/imgs/mint.png" alt=""></Link>
-        
-        {/if}
+            <button style="margin: 2.5rem;"><p style="margin:unset;">MINT</p></button></Link>
+      
         <Route path="/"><Home /></Route>
         <Route path="/mint" component={Mint}><Mint /></Route>
         <Route path="/mint"><Mint /></Route>
@@ -49,9 +50,6 @@
     </Router>
 
     <script type="text/javascript" src="/script.js"></script>
-    <footer style="">
-        <a href="/"><h1 class="pepebottom">SPACEPEPES</h1></a>
-    </footer>
 </div>
 <style>
 	.main {
@@ -72,16 +70,17 @@
   height: 100vh;
     display: flex;
 }
-.pepebottom{
+.pepebottom{color: rgb(188, 255, 1);
+    margin:2rem auto;
     width:100vw;text-align:center;font-size:5rem;
 }
 header{z-index:5;position:relative;}
 @media only screen and (max-width: 900px) {
     .pepebottom{width:100vw;text-align:center;font-size:3rem;}
 }
-footer{position:relative;bottom:0px;left:0px;width:100vw;height:auto;}
+footer{margin-top: -50px;position:relative;bottom:0px;left:0px;width:100vw;height:auto;z-index: 200;}
 
-
+footer a > h3{width:100vw;text-align:center;}
 .nav-links{display:flex;flex-flow:row;justify-content:space-around;}
 .nav-links > a{margin:1rem;transition:transform 0.2s ease;}
 .icon-box > a{margin:1rem;transition:transform 0.2s ease;}

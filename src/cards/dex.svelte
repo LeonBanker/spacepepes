@@ -94,7 +94,7 @@
         justify-content: center;}
     .card-wrapper{
         display: flex;
-    flex-flow: wrap;padding:4rem 0rem;
+    flex-flow: wrap;padding:2rem 0rem;
     justify-content: center;
 max-width:512px;margin:auto;
     }
