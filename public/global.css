@@ -53,22 +53,26 @@ input:disabled {
 }
 
 button {
-	border:2px solid white;
-	border-radius:0.5rem ;
-	padding:0.5rem 1rem;
-	margin:unset;
-	color: white;
-	background-color: black;
-	display: block;
-	letter-spacing:2px;
-	font-weight:normal;
-	transition:background-color 200ms, color 200ms ease;
-}
-button:hover {
-	padding:0.5rem 1rem;
+	box-shadow: 0px 5px rgb(188, 255, 1);
 	color: black;
 	border:2px solid white;
 	background-color: white;
+	border-radius:0.5rem ;
+	padding:0.5rem 1rem;
+	margin:unset;
+	display: block;
+	letter-spacing:2px;
+	font-weight:normal;
+	transition:all 200ms ease;
+	cursor: pointer;
+}
+button:hover {
+	box-shadow: 0px 2px rgb(188, 255, 1);
+	padding:0.5rem 1rem;
+	color: rgb(188, 255, 1);	
+	transform:translatey(3px);
+	border:2px solid white;
+	background-color: black;
 	outline: none;
 }
 .swiper-pagination-bullet{
