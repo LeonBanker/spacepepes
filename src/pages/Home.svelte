@@ -486,12 +486,7 @@ body {
     height: auto;
     display: flex;
     min-height: 70vh;
-}
-button{
-  background-color:transparent;
-}
-button:hover{ background-color:white;
-}    
+}  
 @media screen and (max-width: 1000px) {
 
 
