@@ -212,13 +212,6 @@ animation();
         justify-content: center;
         margin:auto;
     }
-    button:hover > h2{
-        color:black;
-    }
-    button:hover{
-        background-color:white;
-        padding:0.5rem 2rem;border:5px solid white;
-    }
     button:hover h2 > img{
 filter:invert(0);
     }
